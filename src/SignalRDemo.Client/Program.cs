@@ -11,6 +11,10 @@
             var connection = new HubConnectionBuilder().WithUrl("https://localhost:5001/chathub").Build();
             connection.StartAsync().Wait();
             connection.On("ReceiveMessage", (string username, string message) => ReceiveMessage(username, message));
+            connection.On("AnnounceJoinRoom", (string username) =>
+            {
+                Console.WriteLine($"{username} joined the group");
+            });
 
             Console.WriteLine("Enter your username");
             string username = Console.ReadLine();
@@ -19,6 +23,14 @@
             {
                 string message = Console.ReadLine();
                 await SendMessageAsync(connection, username, message);
+
+                var messageParts = message.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (messageParts[0].ToLower() == "join")
+                {
+                   await connection.InvokeCoreAsync("JoinRoom", new string[] { messageParts[1], username });
+                }
+
                 if (message.Trim().Length == 0)
                 {
                     break;
