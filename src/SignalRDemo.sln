@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{42A1AAA9-249A-49D5-9890-06A391606145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo.Client", "SignalRDemo.Client\SignalRDemo.Client.csproj", "{42A1AAA9-249A-49D5-9890-06A391606145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{C9603F3B-1CB0-42CB-8330-8EB1249A14E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo.Server", "SignalRDemo.Server\SignalRDemo.Server.csproj", "{C9603F3B-1CB0-42CB-8330-8EB1249A14E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
