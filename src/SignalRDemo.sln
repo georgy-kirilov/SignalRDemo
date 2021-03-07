@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo.Client", "Signa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo.Server", "SignalRDemo.Server\SignalRDemo.Server.csproj", "{C9603F3B-1CB0-42CB-8330-8EB1249A14E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{128BB1B0-CDF4-4A05-9D38-DE9FE0B6AA9C}"
-	ProjectSection(SolutionItems) = preProject
-		Users.txt = Users.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRDemo.Data", "SignalRDemo.Data\SignalRDemo.Data.csproj", "{D4D3C3FD-A776-4310-88ED-16EB7EE84974}"
 EndProject
 Global
